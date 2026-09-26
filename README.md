@@ -2,8 +2,7 @@
 
 A Kodi addon that lets you play [NTS Radio](https://www.nts.live/) — NTS 1,
 NTS 2, and the NTS Infinite Mixtapes — directly from the Kodi music add-ons
-menu. Companion to the [GNOME Shell NTS Radio extension](https://github.com/dcritch/gnome-nts),
-reimplemented as a native `plugin.audio.*` Kodi addon.
+menu.
 
 This is an unofficial, personal project and is not affiliated with or
 endorsed by NTS.

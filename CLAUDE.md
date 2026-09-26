@@ -6,10 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A Kodi addon (`plugin.audio.nts`) targeting Kodi 21.x ("Omega") that lets
 users play NTS Radio — NTS 1, NTS 2, and the 16 NTS Infinite Mixtapes —
-directly from Kodi's Music Add-ons menu. It's the Kodi counterpart to the
-[GNOME Shell NTS Radio extension](https://github.com/dcritch/gnome-nts): the
-same stream list, reimplemented as a native `plugin.audio.*` addon instead of
-a panel indicator driven by `ffplay`.
+directly from Kodi's Music Add-ons menu.
 
 There is no Kodi installation in this development environment — verification
 here is limited to static checks (syntax, XML schema, `kodi-addon-checker`).
@@ -64,10 +61,7 @@ debug logging) for errors from the addon.
   `sys.argv[1]` = handle, `sys.argv[2]` = query string) and hands off to
   `resources/lib/router.py`.
 - **`resources/lib/streams.py`** — `STREAMS` (NTS 1, NTS 2) and `MIXTAPES`
-  (the 16 Infinite Mixtapes) as `Stream(id, label, url)` NamedTuples. This is
-  a direct port of `STREAMS`/`MIXTAPES` in `gnome-nts/extension.js` — same
-  ids, labels, URLs, and order. If the upstream stream list changes there,
-  update it here too.
+  (the 16 Infinite Mixtapes) as `Stream(id, label, url)` NamedTuples.
 - **`resources/lib/router.py`** — all `xbmcgui`/`xbmcplugin`/`xbmcaddon`
   interaction lives here. `run()` dispatches on the `action` query param:
   no action → `list_root()` (NTS 1 and NTS 2 as directly playable items,
@@ -79,18 +73,17 @@ debug logging) for errors from the addon.
   re-invoking the addon. `setContentLookup(False)` is set on every item to
   stop Kodi from probing the live stream with a HEAD/range request before
   playback.
-- **No "Stop" affordance** — unlike the GNOME extension's panel menu, Kodi's
-  own player OSD already provides stop/pause, so the addon doesn't need to
-  (and can't meaningfully) offer one.
+- **No "Stop" affordance** — Kodi's own player OSD already provides
+  stop/pause, so the addon doesn't need to (and can't meaningfully) offer
+  one.
 - **Localization** — `resources/language/resource.language.en_gb/strings.po`
   holds exactly one real UI string (`#32001` "Mixtapes"). Stream/mixtape
-  names are treated as data, not localizable UI chrome, matching how the
-  GNOME extension hardcodes English labels.
+  names are treated as data, not localizable UI chrome.
 - **Icon pipeline** — `art/icon-source.svg` is a 512×512 wrapper (solid
-  black background, ~96px padding) around the same glyph path used in
-  `gnome-nts/icons/nts.svg`, needed because Kodi requires `icon.png` to have
-  a solid non-transparent background. `tools/generate-icon.sh` rasterizes it
-  via `rsvg-convert` to the committed `icon.png` at the repo root. No fanart
+  black background, ~96px padding) around the NTS glyph, needed because Kodi
+  requires `icon.png` to have a solid non-transparent background.
+  `tools/generate-icon.sh` rasterizes it via `rsvg-convert` to the committed
+  `icon.png` at the repo root. No fanart
   is included (not required for sideloading, only for official Kodi repo
   submission).
 - **`package.sh`** — stages exactly the files Kodi needs
