@@ -50,7 +50,9 @@ NTS Radio.
 
 ## Known limitations
 
-This addon was developed and statically validated without a local Kodi
-installation available. It has not yet been smoke-tested against a real
-Kodi 21.2 instance — please verify playback and menu navigation on your own
-setup before relying on it.
+This addon has been smoke-tested against real Kodi 21.x instances (both a
+physical device and a local Kodi 21.3 flatpak install): the addon loads,
+the root and Mixtapes listings render correctly, and NTS 1/NTS 2/mixtape
+streams play back through Kodi's own player. A few minor follow-up items
+from that testing are still being worked through, so treat this as
+working but not yet fully polished.
