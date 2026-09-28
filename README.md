@@ -35,13 +35,13 @@ select the generated zip.
 
 ### Option 2: Copy to the Kodi addons directory
 
-Copy this repository into Kodi's addons directory, named to match the addon
-id:
+Copy the `plugin.audio.nts/` folder from this repository into Kodi's addons
+directory:
 
-- Linux: `~/.kodi/addons/plugin.audio.nts/`
-- Linux (Flatpak): `~/.var/app/tv.kodi.Kodi/data/addons/plugin.audio.nts/`
-- macOS: `~/Library/Application Support/Kodi/addons/plugin.audio.nts/`
-- Windows: `%APPDATA%\Kodi\addons\plugin.audio.nts\`
+- Linux: `~/.kodi/addons/`
+- Linux (Flatpak): `~/.var/app/tv.kodi.Kodi/data/addons/`
+- macOS: `~/Library/Application Support/Kodi/addons/`
+- Windows: `%APPDATA%\Kodi\addons\`
 
 Then restart Kodi.
 
