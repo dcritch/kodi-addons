@@ -15,7 +15,7 @@
         <description lang="en_GB">Add-ons maintained by dcritch, including NTS Radio. Add this repository to Kodi to install them and receive updates automatically.</description>
         <platform>all</platform>
         <license>MIT</license>
-        <source>https://github.com/dcritch/kodi-nts</source>
+        <source>https://github.com/dcritch/kodi-addons</source>
         <news>1.0.0 - Initial release.</news>
         <assets>
             <icon>icon.png</icon>

@@ -14,7 +14,7 @@
         <description lang="en_GB">Listen to NTS 1, NTS 2, and the 16 NTS Infinite Mixtapes directly in Kodi. No account or API key required — streams play directly from NTS's public CDN URLs.</description>
         <platform>all</platform>
         <license>MIT</license>
-        <source>https://github.com/dcritch/kodi-nts</source>
+        <source>https://github.com/dcritch/kodi-addons</source>
         <news>1.0.1 - Fix now-playing/visualisation screen showing the default album art instead of the NTS logo.
 1.0.0 - Initial release: NTS 1, NTS 2, and Infinite Mixtapes.</news>
         <assets>
