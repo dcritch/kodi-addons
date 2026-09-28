@@ -8,6 +8,7 @@ from resources.lib.streams import MIXTAPES, STREAMS
 
 ADDON = xbmcaddon.Addon()
 _ = ADDON.getLocalizedString
+ICON = ADDON.getAddonInfo('icon')
 
 
 def _build_url(base_url, **params):
@@ -24,7 +25,7 @@ def _make_listitem(stream):
     tag.setArtist('NTS Radio')
     tag.setGenres(['Radio'])
 
-    li.setArt({'icon': 'icon.png', 'thumb': 'icon.png'})
+    li.setArt({'icon': ICON, 'thumb': ICON})
     return li
 
 

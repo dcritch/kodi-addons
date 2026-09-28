@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.audio.nts"
        name="NTS Radio"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="dcritch">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
@@ -15,7 +15,8 @@
         <platform>all</platform>
         <license>MIT</license>
         <source>https://github.com/dcritch/kodi-nts</source>
-        <news>1.0.0 - Initial release: NTS 1, NTS 2, and Infinite Mixtapes.</news>
+        <news>1.0.1 - Fix now-playing/visualisation screen showing the default album art instead of the NTS logo.
+1.0.0 - Initial release: NTS 1, NTS 2, and Infinite Mixtapes.</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
