@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kodi://dcritch's Kodi Add-ons</title>
+    <link rel="stylesheet" href="/std.css" />
+    <style>
+      pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      .article-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .article-list li {
+        margin-bottom: 1.5em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid gray;
+        overflow: hidden;
+      }
+
+      .article-list li:last-child {
+        border-bottom: none;
+      }
+
+      .addon-icon {
+        float: left;
+        width: 64px;
+        height: 64px;
+        margin-right: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+      }
+
+      .article-meta {
+        color: #555;
+        font-size: 0.9em;
+        margin: 0.25em 0 0.75em;
+      }
+
+      .article-meta p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <b><a href="https://stderr.ca">stderr.ca</a></b> |
+        <b><a href="./">kodi://</a></b>
+      </div>
+      <div class="right">
+        add-ons: <b>__ADDON_COUNT__</b>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>kodi add-ons.</h1>
+      <br>
+      <pre>
+a small personal Kodi repository — add it once, then install and update
+add-ons from Kodi's own add-on browser from then on.
+      </pre>
+
+      <h2>install</h2>
+      <ol>
+        <li>Download <a href="repository.dcritch/repository.dcritch-__REPO_VERSION__.zip">repository.dcritch-__REPO_VERSION__.zip</a>.</li>
+        <li>In Kodi: <b>Add-ons</b> → install from zip file icon → pick the downloaded zip.</li>
+        <li>Then: <b>Add-ons</b> → install from repository → <b>dcritch's Kodi Add-ons</b> → browse and install.</li>
+      </ol>
+
+      <h2>add-ons</h2>
+      <ul class="article-list">
+        <li>
+          <img class="addon-icon" src="plugin.audio.nts/icon.png" alt="">
+          <b>NTS Radio</b>
+          <p class="article-meta">plugin.audio.nts &middot; v__NTS_VERSION__</p>
+          <p>__NTS_SUMMARY__</p>
+          <p>__NTS_DESCRIPTION__</p>
+          <p>
+            <a href="plugin.audio.nts/plugin.audio.nts-__NTS_VERSION__.zip">download zip</a> &middot;
+            <a href="https://github.com/dcritch/kodi-addons">source</a>
+          </p>
+        </li>
+        <li>
+          <img class="addon-icon" src="repository.dcritch/icon.png" alt="">
+          <b>dcritch's Kodi Add-ons</b>
+          <p class="article-meta">repository.dcritch &middot; v__REPO_VERSION__</p>
+          <p>__REPO_SUMMARY__</p>
+          <p>__REPO_DESCRIPTION__</p>
+          <p>
+            <a href="repository.dcritch/repository.dcritch-__REPO_VERSION__.zip">download zip</a> &middot;
+            <a href="https://github.com/dcritch/kodi-addons">source</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <div class="left">
+        <span>kodi repo</span>
+      </div>
+      <a href="https://stderr.ca">dcritch</a>
+    </div>
+  </body>
+</html>

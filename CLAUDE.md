@@ -111,7 +111,17 @@ debug logging) for errors from the addon.
   the actual hosted layout into `dist/repo/`: it runs `package.sh` for
   `plugin.audio.nts`, zips `repository.dcritch/` the same way, and
   concatenates both `addon.xml` files into one `addons.xml` (+ its
-  `.md5` checksum) — the format Kodi's repository mechanism expects.
+  `.md5` checksum) — the format Kodi's repository mechanism expects. It also
+  renders `tools/repo-index.html.tmpl` into `dist/repo/index.html` — a
+  human-friendly landing page so `https://stderr.ca/kodi/` shows a listing
+  of addons instead of a 403/blank directory. It links `/std.css`, the
+  shared stylesheet already hosted at the `stderr.ca` webserver root (not
+  bundled in this repo), for the site's monospace/boxed look, and only
+  carries a small local `<style>` block for the addon-list layout that
+  `std.css` doesn't define. The template's `__PLACEHOLDER__` tokens (version,
+  summary, description per addon) are filled in from each `addon.xml` by a
+  small Python substitution step in the script — edit the `.tmpl` file for
+  copy/layout changes, not the generated `dist/repo/index.html`.
   Publishing a new version means bumping the relevant `addon.xml`
   (`plugin.audio.nts`'s or `repository.dcritch`'s), re-running
   `tools/generate-repo.sh`, and syncing `dist/repo/`'s contents to
