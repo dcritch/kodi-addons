@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.dcritch"
        name="dcritch's Kodi Add-ons"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="dcritch">
     <extension point="xbmc.addon.repository" name="dcritch's Kodi Add-ons">
         <dir>
@@ -16,7 +16,8 @@
         <platform>all</platform>
         <license>MIT</license>
         <source>https://github.com/dcritch/kodi-addons</source>
-        <news>1.0.0 - Initial release.</news>
+        <news>1.0.1 - Updated icon
+1.0.0 - Initial release.</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
